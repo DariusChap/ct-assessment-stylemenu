@@ -4,8 +4,7 @@
     Add a CSS ruleset to accomplish the following:
     - Use the 'Oswald' font family at 14px throughout the body of the document.
 */
-
-
+body{font-family: Oswald; font-size: 14px;}
 nav {font-family: sans-serif; font-size: 10px;}
 #main {width: 900px; margin: 10px auto;}
 
@@ -16,7 +15,7 @@ nav {font-family: sans-serif; font-size: 10px;}
         - use a lighter weight font
 */
 
-
+h1 {font-family: "Bungee Inline"; font-size: 46px; font-weight: lighter;}
 #menu {columns: 420px 2; column-gap: 60px;}
 section {margin-bottom: 20px; padding: 10px;}
 
@@ -26,6 +25,7 @@ h2 {margin-top: 0;}
     Add a CSS ruleset targeting targeting the headings of the menu (e.g. "Starters") to accomplish the following:
         - Show each of the section headings of the menu in uppercase
 */
+h1,h2 {text-transform: uppercase;}
 
 
 /* 
@@ -35,6 +35,8 @@ h2 {margin-top: 0;}
 */
 dt {
     display: inline;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 /* 
@@ -43,7 +45,7 @@ dt {
 */
 
 
-
+dt::after{ content: ",";}
 dd {display: inline; margin: 0;}
 dd::after {content: " "; display: block; clear: both; margin-bottom: 15px;}
 
@@ -53,12 +55,11 @@ dd::after {content: " "; display: block; clear: both; margin-bottom: 15px;}
     Add a CSS ruleset targeting the footer to accomplish the following:
     - right align the text in the footer
 */
-
+footer {display: flex; text-align: right; justify-content: flex-end;}
 
 
 /* 
     Add a CSS ruleset targeting the starters and desserts sections to accomplish the following:
     - draw a 2px black border around the sections
 */
-
-
+section#starters,section#desserts {border: 2px black solid;}
